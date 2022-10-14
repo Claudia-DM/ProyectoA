@@ -1,15 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <style>
+        label {
+            display: block;
+            float: left;
+            width: 120px;
+
+        }
+    </style>
 </head>
+
 <body>
-<h1>
-    Formulario
-    
-</h1>
+    <form action="" id = 'formulario'>
+    <h1>
+        Formulario
+    </h1>
+
+    <form action="">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="nombre" id ='nombre'>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="apellido" id ='apellido'>
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="edad" id ='edad'>
+        <type="number" name="codigo" id="idcodigo" min="0" max="9">
+       
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id ='email'> 
+            <pattern=".+@globex\.com" size="30" required>
+        </div>
+        <td>Motivo:</td>
+        <td>
+            <select name=motivo>
+                <option value=”Seleccionar”>Seleccionar
+                <option value=”General”>Contacto General 
+                <option value=”Producto”>Problemas con el Producto
+                <option value=”Sugerencias”>Sugerencias
+            </select>
+            <br>
+            
+            <form action="#" method="post">
+                <textarea name="consulta" rows="15" cols="30"></textarea>
+              </form>
+           
+                 >
+
+        <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
+        <br>
+
+        <input type="submit"  value ="Enviar">
+    </form>
+
+    <div id ='error'></div>
+
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>

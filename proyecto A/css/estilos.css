@@ -1,10 +1,165 @@
 
-font-family: 'Anton', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(../img/fondo-prueba2.svg);
+    background-size: cover;
+}
+
+/* Diseño Header (img + menu) */
+header{
+  background-color: #233454;
+  /* width: 100vw; */
+}
+
+article{
+    margin-top: 15px;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-nav{
+    padding: 25px;
+}
+
+.nav-li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-ul{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    padding: 25px 0;
+    border-radius: 25px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-li {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-li:hover:after {
+    transform: scaleX(1);
+}
+
+/* Diseño main. */
+
+/* Home Artículos. */
+.banner-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 65, 114,.7);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.titulo-central{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+.card{
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    margin: 5px;
+    padding: 2px 15px;
+}
+
+.card h2{
+    text-transform: uppercase;
+}
+
+.card img{
+    height: 250px;
+}
+
+.card:hover{
+    font-size: 1.1em;
+    border-color: #8d630e;
+}
+
+.card:active{
+    border-color: #088c19;
+}
+
+/* Home Mapa */
+.mapa{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapa h3{
+    padding: 15px;
+    font-size: 2em;
+}
+
+.mapa p{
+    padding: 15px;
+}
+.mapa iframe{
+    border: 1px solid rgb(39, 65, 114,.7);
+    border-radius: 15px;
+    margin: 0 center;
+}
+
+
+/* Diseño Footer (iconos redes sociales). */
+footer{
+    background-color: #233454;
+}
+
+/* font-family: 'Anton', sans-serif;
 font-family: 'Bungee Spice', cursive;
 font-family: 'Rubik', sans-serif;
 
 
 
 
-aqui coloque lo correspondiente a fonts
+aqui coloque lo correspondiente a fonts */
 
