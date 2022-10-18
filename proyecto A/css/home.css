@@ -1,0 +1,258 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url(../img/fondo-pag.svg);
+    background-size: cover;
+}
+
+/* Diseño Header (img + menu) */
+header{
+  background-color: #233454;
+}
+
+
+.img-nav{
+    grid-area: img-nav;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-ul{
+    grid-area: ul-nav;
+    margin: 20px auto;
+    display: flex;
+    list-style: none;
+    padding: 20px 20px;
+    border-radius: 25px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.cabecera{
+    background-color: #233454;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "img-nav ul-nav";
+    align-items: center;
+}
+
+.nav-li {
+    padding: 10px;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-li:hover:after {
+    transform: scaleX(1);
+}
+
+
+/* Diseño main. */
+
+/* Home Artículos. */
+article{
+    margin-bottom: 3%;
+}
+.banner-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 65, 114,.7);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.titulo-central{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card .card1{
+    grid-area: card1;
+}
+
+.card .card2{
+    grid-area: card2;
+}
+
+.card .card3{
+    grid-area: card3;
+}
+
+.card .card4{
+    grid-area: card4;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center; 
+    justify-content: center;   
+    /* grid-template-areas: "card1 card2 card3 card4"; */
+    gap: 2%;
+    margin: 2%;
+}
+
+.card{
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    margin: 5px;
+    padding: 2px 15px;
+}
+
+.card h2{
+    text-transform: uppercase;
+}
+
+.card img{
+    height: 250px;
+}
+
+.card p{
+    text-align: center;
+}
+
+.card:hover{
+    border-color: #8d630e;
+
+}
+
+.card:hover h2{
+    font-size: 1.7em;
+    transition: 0.3s;
+    background-color: rgb(247, 251, 251);
+}
+
+.card:active{
+    border-color: #088c19;
+}
+
+/* Home Mapa */
+.mapa{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapa h3{
+    padding: 15px;
+    font-size: 2em;
+}
+
+.mapa p{
+    padding: 15px;
+}
+.mapa iframe{
+    border: 1px solid rgb(39, 65, 114,.7);
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+
+/* Diseño Footer (iconos redes sociales). */
+footer{
+    background-color: #233454;
+}
+
+/* Responsive Home */
+
+
+@media (max-width: 1100px){
+    article{
+        margin-bottom: 15%;
+    }
+    .cabecera{
+        display: grid;
+        background-size: cover;
+        grid-template-areas: "img-nav"
+                              "ul-nav";
+    }
+    .container{
+        display: grid;
+        margin-bottom: 5%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px){
+    article{
+        margin-bottom: 25%;
+    }
+    .cabecera{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-areas: "img-nav"
+                              "ul-nav";
+    }
+    .container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25%;
+       grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
