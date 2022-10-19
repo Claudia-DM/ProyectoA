@@ -83,6 +83,13 @@ header{
 /* Diseño main. */
 
 /* Home Artículos. */
+
+.fotos{
+    display: grid;
+    height: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 article{
     margin-bottom: 3%;
 }
@@ -102,30 +109,13 @@ article{
     text-align: center;
 }
 
-.card .card1{
-    grid-area: card1;
-}
-
-.card .card2{
-    grid-area: card2;
-}
-
-.card .card3{
-    grid-area: card3;
-}
-
-.card .card4{
-    grid-area: card4;
-}
-
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 23% 23% 23% 23%;
     align-items: center; 
-    justify-content: center;   
-    /* grid-template-areas: "card1 card2 card3 card4"; */
-    gap: 2%;
-    margin: 2%;
+    justify-content: center;
+    gap: 1%;
+    margin: 1%;
 }
 
 .card{
@@ -144,8 +134,8 @@ article{
 }
 
 .btn button{
-    margin: 5px;
-    padding: 2px 15px;
+    margin: 3px;
+    padding: 2px 8px;
 }
 
 .card h2{
@@ -155,6 +145,7 @@ article{
 .card img{
     height: 250px;
 }
+
 
 .card p{
     text-align: center;
@@ -199,15 +190,36 @@ article{
 
 /* Diseño Footer (iconos redes sociales). */
 footer{
+    display: grid;
+    justify-items: center;
+    align-items: center;
     background-color: #233454;
 }
+
+footer div {
+    text-align: center;
+    margin: 10px 0px;
+    padding: 20px 0px 10px;
+}
+footer i{
+    margin: 0px 25px;
+    font-size: 2em;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
 
 /* Responsive Home */
 
 
 @media (max-width: 1100px){
     article{
-        margin-bottom: 15%;
+        margin-bottom: 5px;
     }
     .cabecera{
         display: grid;
@@ -217,14 +229,12 @@ footer{
     }
     .container{
         display: grid;
-        margin-bottom: 5%;
-        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+        grid-template-columns: 46% 46%;
     }
 }
 @media (max-width: 600px){
-    article{
-        margin-bottom: 25%;
-    }
+
     .cabecera{
         display: grid;
         align-items: center;
@@ -233,14 +243,23 @@ footer{
         grid-template-areas: "img-nav"
                               "ul-nav";
     }
+    .card{
+        margin-bottom: 25px;
+    }
     .container{
         display: grid;
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-top: 25%;
+        margin-bottom: 75px;
        grid-template-columns: 1fr;
     }
+    footer i{
+        margin: 0px 15px;
+        font-size: 2em;
+        color: white;
+    }
+
 }
 
 
