@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/boton-arriba.js"></script>
     <script src="https://kit.fontawesome.com/2107360b21.js" crossorigin="anonymous"></script>
     <title>Animales de Granja</title>
 </head>
+
 <body>
     <header>
         <!-- <h1>COMIDA DE MASCOTAS</h1> -->
@@ -26,12 +30,13 @@
     </header>
     <!-- Alimento para animales de granja -->
     <main>
+        <i class="ir-arriba fa-sharp fa-solid fa-arrow-up"></i>
         <article>
             <div class="banner-central">
-                <h1 class="titulo-central">Otros: Alimento p/ Animales de Granja</h1>
+                <h1 class="titulo-central">Alimento p/ Animales Granja y Otros</h1>
             </div>
             <div class="container">
-                 <div class="card card1">
+                <div class="card card1">
                     <h2>novul</h2>
                     <img src="img/Alimentos/Pipetas Otros/Novul_Anticonceptivo_Inyectable.png" alt="Foto balanceado.">
                     <div class="btn">
@@ -41,39 +46,137 @@
                         Cantidad: 12 unidades.
                     </p>
                     <br>
-                    <h2>$3.520</h2>                    
+                    <h2>$3.520</h2>
                 </div>
                 <div class="card card2">
-                    <h2>basken (antiparasit.)</h2>
-                    <img src="img/Alimentos/Pipetas Otros/Basken_Antiparacitario_Perros.png" alt="Foto balanceado.">
+                    <h2>Diabsorb</h2>
+                    <img src="img/Alimentos/Pipetas Otros/Piedras_Sanitarias.png" alt="Foto balanceado.">
                     <div class="btn">
-                        <button class="btn-card">1/10kg</button>
-                        <button class="btn-card">11/20kg</button>
-                        <button class="btn-card">21/40kg</button>
-                        <button class="btn-card">41/60kg</button>
+                        <button class="btn-card">25kg</button>
                     </div>
-                    <p>Antiparasitario para perros de 1 a 60kg. <br>
-                        Cantidad: 4 comprimidos.
+                    <p>Piedras sanitarias para gatos. <br>
+                        Cantidad: 1 bolsa.
                     </p>
                     <br>
-                    <h2>$390</h2>                    
+                    <h2>$1.450</h2>
                 </div>
                 <div class="card card3">
-                    <h2>Fipro (pipeta)</h2>
+                    <h2>Fipro (perro)</h2>
                     <img src="img/Alimentos/Pipetas Otros/Fipro_Pipetas_Perros.png" alt="Foto pipeta.">
                     <div class="btn">
                         <button class="btn-card">1/10kg</button>
                         <button class="btn-card">11/20kg</button>
                         <button class="btn-card">21/40kg</button>
-                        <button class="btn-card">41/60kg</button>
                     </div>
-                    <p>Pipeta para perros de 1 a 60 kg. <br>
+                    <p>Pipeta para perros de 1 a 40 kg. <br>
                         Cantidad: 1 unidad.
                     </p>
                     <br>
                     <h2>$375</h2>
                 </div>
+                <div class="card card4">
+                    <h2>Fipro (gato)</h2>
+                    <img src="img/Alimentos/Pipetas Otros/Fipro_Pipeta_Gatos.png" alt="">
+                    <div class="btn">
+                        <button class="btn-card">1 un.</button>
+                    </div>
+                    <p>Pipeta para gatos. <br><br>
+                        Cantidad: 1 unidad.
+                    </p>
+                    <br>
+                    <h2>$630</h2>
+                </div>
             </div>
+            <div class="container">
+                <div class="card card1">
+                    <h2>Basken (gato)</h2>
+                    <img src="img/Alimentos/Pipetas Otros/Basken_Antiparacitario_Gatos.png" alt="Foto balanceado.">
+                    <div class="btn">
+                        <button class="btn-card">1 un.</button>
+                    </div>
+                    <p>Antiparasitario para gatos. <br><br>
+                        Cantidad: 4 comprimidos.
+                    </p>
+                    <br>
+                    <h2>$630</h2>
+                </div>
+                <div class="card card2">
+                    <h2>Basken (perro)</h2>
+                    <img src="img/Alimentos/Pipetas Otros/Basken_Antiparacitario_Perros.png" alt="Foto balanceado.">
+                    <div class="btn">
+                        <button class="btn-card">1/10kg</button>
+                        <button class="btn-card">11/20kg</button>
+                        <button class="btn-card">21/40kg</button>
+                    </div>
+                    <p>Antiparasitario para perros de 1 a 40kg. <br>
+                        Cantidad: 4 comprimidos.
+                    </p>
+                    <br>
+                    <h2>$390</h2>
+                </div>
+                <div class="card card3">
+                    <h2>Alpiste (ave)</h2>
+                    <img src="img/Alimentos/Otros Animales/alpiste-aves-20kg.png" alt="Foto pipeta.">
+                    <div class="btn">
+                        <button class="btn-card">20kg</button>
+                    </div>
+                    <p>Bolsón de alimento para aves. <br>
+                        Cantidad: 1 bolsa.
+                    </p>
+                    <br>
+                    <h2>$9.940</h2>
+                </div>
+                <div class="card card4">
+                    <h2>Mijo (ave)</h2>
+                    <img src="img/Alimentos/Otros Animales/mijo-aves-20kg.png" alt="Foto pipeta.">
+                    <div class="btn">
+                        <button class="btn-card">20kg</button>
+                    </div>
+                    <p>Bolsón de alimento para aves. <br>
+                        Cantidad: 1 bolsa.
+                    </p>
+                    <br>
+                    <h2>$4.290</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card card1">
+                    <h2>Girasol (ave)</h2>
+                    <img src="img/Alimentos/Otros Animales/girasol-10kg.png" alt="Foto pipeta.">
+                    <div class="btn">
+                        <button class="btn-card">20kg</button>
+                    </div>
+                    <p>Bolsón de girasol confitero para aves. <br>
+                        Cantidad: 1 bolsa.
+                    </p>
+                    <br>
+                    <h2>$5.650</h2>
+                </div>
+                <div class="card card2">
+                    <h2>Maiz (ave)</h2>
+                    <img src="img/Alimentos/Otros Animales/maiz-35kg.png" alt="Foto pipeta.">
+                    <div class="btn">
+                        <button class="btn-card">35kg</button>
+                    </div>
+                    <p>Bolsón de maiz entero para aves. <br>
+                        Cantidad: 1 bolsa.
+                    </p>
+                    <br>
+                    <h2>$2.000</h2>
+                </div>
+                <div class="card card3">
+                    <h2>Racion Equino</h2>
+                    <img src="img/Alimentos/Otros Animales/Racion Equinos-20kg.png" alt="Foto pipeta.">
+                    <div class="btn">
+                        <button class="btn-card">20kg</button>
+                    </div>
+                    <p>Bolsón de alimento para equinos. <br>
+                        Cantidad: 1 bolsa.
+                    </p>
+                    <br>
+                    <h2>$2.100</h2>
+                </div>
+            </div>            
         </article>
     </main>
     <footer>
@@ -87,4 +190,5 @@
         <p>Derechos reservados @2020</p>
     </footer>
 </body>
+
 </html>

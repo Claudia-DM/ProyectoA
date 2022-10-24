@@ -23,7 +23,6 @@ header{
   background-color: #233454;
 }
 
-
 .img-nav{
     grid-area: img-nav;
     padding: 25px;
@@ -82,6 +81,20 @@ header{
 
 /* Diseño main. */
 
+/* Boto ir arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#032832;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    border-radius: 5px;
+}
+
 /* Home Artículos. */
 
 .fotos{
@@ -124,6 +137,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 2px solid black;
 }
 
@@ -135,7 +149,7 @@ article{
 
 .btn button{
     margin: 3px;
-    padding: 2px 8px;
+    padding: 2px 10px;
 }
 
 .card h2{
@@ -156,9 +170,13 @@ article{
 
 }
 
+.card h2{
+    transition: all .3s ease-in-out;
+}
+
 .card:hover h2{
     font-size: 1.7em;
-    transition: 0.3s;
+    transition: 0.5s;
     background-color: rgb(247, 251, 251);
 }
 
@@ -213,6 +231,18 @@ footer p{
     margin-bottom: 10px;
 }
 
+.fa-brands{
+    transition: all 0.3s ease-in-out;
+}
+
+.fa-brands:hover{
+    color: lightblue;
+    font-size: 2.5em;
+    transition: 0.5s;
+}
+
+
+
 
 /* Responsive Home */
 
@@ -231,6 +261,9 @@ footer p{
         display: grid;
         margin-bottom: 20px;
         grid-template-columns: 46% 46%;
+    }
+    .ir-arriba{
+        scale: 0.9;
     }
 }
 @media (max-width: 600px){
@@ -258,6 +291,9 @@ footer p{
         margin: 0px 15px;
         font-size: 2em;
         color: white;
+    }
+    .ir-arriba{
+        scale: 0.8;
     }
 
 }

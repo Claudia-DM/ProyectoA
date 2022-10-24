@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
-    link
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
     <script src="https://kit.fontawesome.com/2107360b21.js" crossorigin="anonymous"></script>
 </head>
@@ -26,66 +26,74 @@
             </ul>
         </div>
     </header>
-    <form action="" id='formulario'>
-        <h1>
-            Formulario
-        </h1>
-
-        <form action="">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="nombre" id='nombre'>
+    <main>
+        <div class="form-contacto">
+            <div class="banner-central">
+                <h1 class="titulo-central">Alimento Balanceado - Perros</h1>
             </div>
-            <div>
-                <label for="apellido">Apellido</label>
-                <input type="apellido" id='apellido'>
-            </div>
-            <div>
-                <label for="edad">Edad</label>
-                <input type="edad" id='edad'>
-                <type="number" name="codigo" id="idcodigo" min="0" max="9">
-
+            <form action="POST" id='formulario'>
+                <legend>Contacto</legend>
+                <form action="">
                     <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" id='email'>
-                        <pattern=".+@globex\.com" size="30" required>
+                        <label for="nombre">Nombre</label>
+                        <input type="nombre" id='nombre'>
                     </div>
-                    <td>Motivo:</td>
-                    <td>
-                        <select name=motivo>
-                            <option value=”Seleccionar”>Seleccionar
-                            <option value=”General”>Contacto General
-                            <option value=”Producto”>Problemas con el Producto
-                            <option value=”Sugerencias”>Sugerencias
-                        </select>
-                        <br>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="apellido" id='apellido'>
+                    </div>
+                    <div>
+                        <label for="edad">Edad</label>
+                        <input type="edad" id='edad'>
+                        <type="number" name="codigo" id="idcodigo" min="0" max="9">
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" id='email'>
+                                <pattern=".+@globex\.com" size="30" required>
+                            </div>
+                            <td>Motivo:</td>
+                            <td>
+                                <select name=motivo>
+                                    <option value=”Seleccionar”>Seleccionar
+                                    <option value=”General”>Contacto General
+                                    <option value=”Producto”>Problemas con el Producto
+                                    <option value=”Sugerencias”>Sugerencias
+                                </select>
+                                <br>
+    
+                                <form action="#" method="post">
+                                    <textarea name="consulta" rows="15" cols="30"></textarea>
+                                </form>
+    
+                                >
+    
+                                <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
+                                <br>
+    
+                                <input type="submit" value="Enviar">
+                            </td>
+                        </type>
+                    </div>
+                    <div id='error'></div>
+                </form>
+        </div>     
+    </main>
 
-                        <form action="#" method="post">
-                            <textarea name="consulta" rows="15" cols="30"></textarea>
-                        </form>
-
-                        >
-
-                        <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
-                        <br>
-
-                        <input type="submit" value="Enviar">
-        </form>
-
-        <div id='error'></div>
 
 
-        <script src="js/app.js"></script>
-        <footer>
-            <div>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-            <p>Derechos reservados @2020</p>
-        </footer>
+
+
+    <script src="js/app.js"></script>
+    <footer>
+        <div>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Derechos reservados @2020</p>
+    </footer>
 
 </body>
 
