@@ -28,55 +28,45 @@
     </header>
     <main>
         <div class="form-contacto">
-            <div class="banner-central">
-                <h1 class="titulo-central">Alimento Balanceado - Perros</h1>
-            </div>
             <form action="POST" id='formulario'>
-                <legend>Contacto</legend>
-                <form action="">
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="nombre" id='nombre'>
-                    </div>
-                    <div>
-                        <label for="apellido">Apellido</label>
-                        <input type="apellido" id='apellido'>
-                    </div>
-                    <div>
-                        <label for="edad">Edad</label>
-                        <input type="edad" id='edad'>
-                        <type="number" name="codigo" id="idcodigo" min="0" max="9">
-                            <div>
-                                <label for="email">E-mail</label>
-                                <input type="email" id='email'>
-                                <pattern=".+@globex\.com" size="30" required>
-                            </div>
-                            <td>Motivo:</td>
-                            <td>
-                                <select name=motivo>
-                                    <option value=”Seleccionar”>Seleccionar
-                                    <option value=”General”>Contacto General
-                                    <option value=”Producto”>Problemas con el Producto
-                                    <option value=”Sugerencias”>Sugerencias
-                                </select>
-                                <br>
-    
-                                <form action="#" method="post">
-                                    <textarea name="consulta" rows="15" cols="30"></textarea>
-                                </form>
-    
-                                >
-    
-                                <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
-                                <br>
-    
-                                <input type="submit" value="Enviar">
-                            </td>
-                        </type>
-                    </div>
-                    <div id='error'></div>
-                </form>
-        </div>     
+                <div class="banner-central">
+                    <h1 class="titulo-central">Formulario de Contacto</h1>
+                </div>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id='nombre' placeholder="Inserte su nombre.">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id='apellido' placeholder="Inserte su apellido.">
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" id='edad' placeholder="Inserte su edad.">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id='email' placeholder="Inserte su email.">
+                </div>
+                <div>
+                    <label for="motivo">Motivo</label>
+                    <select name="motivo">
+                        <option name="motivo" value="seleccionar">Seleccionar una opción...
+                        <option name="motivo" value="general">Contacto General
+                        <option name="motivo" value="producto">Problemas con el Producto
+                        <option name="motivo" value="sugerencias">Sugerencias
+                    </select>
+                </div>
+                <div>
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" rows="15" cols="30"></textarea>
+                </div>
+                <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
+                <input type="submit" class="btn-enviar" value="Enviar">
+        </div>
+        <div id='error'></div>
+        </form>
+        </div>
     </main>
 
 

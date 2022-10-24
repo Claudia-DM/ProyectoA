@@ -1,8 +1,41 @@
+.nav-ul{
+    margin: 0px 30px;
+}
+.banner-central{
+    padding: 0px 80px;
+    margin-bottom: 5%;
+}
 
 .form-contacto{
-    display: flex;
+    background-color: rgba(28, 114, 190, 0.05);
+    width: 60%;
+    display: grid;
+    margin: 20px auto;
     gap: 10px;
     justify-content: center;
     text-align: center;
-    border: 1px solid;
+    border: 1px solid #233454;
+    border-radius: 15px;
+}
+
+.form-contacto label{
+    display: block;
+    font-size: 1.2em;
+}
+
+
+
+.form-contacto input,select,textarea{   
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-contacto input:hover{
+    background-color: rgb(15, 130, 231, 0.01);
+}
+
+.btn-enviar{
+    padding: 5px 20px;
 }
