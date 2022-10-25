@@ -42,7 +42,7 @@
                 </div>
                 <div>
                     <label for="edad">Edad</label>
-                    <input type="number" id='edad' placeholder="Inserte su edad.">
+                    <input type="text" id='edad' placeholder="Inserte su edad.">
                 </div>
                 <div>
                     <label for="email">E-mail</label>
@@ -61,10 +61,10 @@
                     <label for="consulta">Consulta</label>
                     <textarea name="consulta" rows="15" cols="30"></textarea>
                 </div>
-                <!-- <input type="submit" onclick = 'return enviarFormulario ();' value ="Enviar"> -->
-                <input type="submit" class="btn-enviar" value="Enviar">
+                <input type="submit" onclick = 'enviarFormulario()' value ="Enviar">
+                <div id='error'></div>
         </div>
-        <div id='error'></div>
+        
         </form>
         </div>
     </main>

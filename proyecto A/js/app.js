@@ -36,19 +36,35 @@ form.addEventListener('submit', function (event){
     var mensajesError = [];
 
     if (nombre.value === null || nombre.value === '') {
-        mensajesError.push('Ingresa tu nombre');
+        mensajesError.push('Ingrese su nombre');
     }
-    if (apellido.value === null || apellido.value === '') {
-        mensajesError.push('Ingresa tu apellido');
-    }
-    if (edad.value === null || edad.value === '') {
-        mensajesError.push('Ingresa tu edad');
-    }
-    if (email.value === null || email.value === '') {
-        mensajesError.push('Ingresa tu email');
+    /*Validamos que inserte un texto y no numeros en nombre.*/
+    let cadenaNombre = nombre.value.split("")
+    for (let index = 0; index < cadenaNombre.length; index++) {
+        if (parseInt(cadenaNombre[index])) {
+            alert("El nombre no puede contener numeros.")
+            return 0
+        }
     }
 
-    error.innerHTML = mensajesError.join(',');
+    if (apellido.value === null || apellido.value === '') {
+        mensajesError.push('Ingrese su apellido');
+    }
+    let cadenaApellido = apellido.value.split("")
+    for (let index = 0; index < cadenaApellido.length; index++) {
+        if (parseInt(cadenaApellido[index])) {
+            alert("El apellido no puede contener numeros.")
+            return 0
+        }
+    }
+    if (edad.value === null || edad.value === '') {
+        mensajesError.push('Ingrese su edad');
+    }
+    if (email.value === null || email.value === '') {
+        mensajesError.push('Ingrese su email');
+    }
+
+    error.innerHTML = mensajesError.join(', ');
 
 })
 
