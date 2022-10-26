@@ -297,8 +297,13 @@ footer p{
     }
 
 }
+#climaLocal{
+    background-color: rgb(39, 65, 114,.3);
+}
 
-
+.iconoClima{
+    width:30px;
+}
 
 
 
